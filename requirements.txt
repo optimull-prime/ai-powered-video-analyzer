@@ -3,10 +3,10 @@
 # It's good practice to note when it was last updated or generated.
 
 # --- Core AI / ML Libraries ---
-openai-whisper==20231117          # For speech transcription
+git+https://github.com/openai/whisper.git@main#egg=openai-whisper # For speech transcription
 torch>=2.2.0,<3.0.0               # PyTorch (check compatibility with CUDA if GPU is used)
-torchaudio~=2.2.0                 # For audio processing with PyTorch
-torchvision~=0.17.0               # For vision models with PyTorch
+torchaudio~=2.6.0                 # For audio processing with PyTorch
+torchvision~=0.21.0               # For vision models with PyTorch
 
 # For YOLO object detection (Ultralytics is a common choice for recent YOLO versions)
 ultralytics~=8.0.190
@@ -38,4 +38,4 @@ ollama~=0.1.8                     # Official Ollama Python client
 # Add any other specific libraries identified during development below.
 # For example, if a specific version of numpy or Pillow is crucial:
 numpy~=1.26.4
-Pillow~=10.3.0
+Pillow~=11.0.0
