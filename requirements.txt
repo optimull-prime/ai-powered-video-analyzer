@@ -4,9 +4,11 @@
 
 # --- Core AI / ML Libraries ---
 openai-whisper==20231117          # For speech transcription
+whisperx~=3.3.0                   # For more advanced speech transcription
+pyannote.audio~=3.3.0             # Required for diarization
 torch>=2.2.0,<3.0.0               # PyTorch (check compatibility with CUDA if GPU is used)
-torchaudio~=2.2.0                 # For audio processing with PyTorch
-torchvision~=0.17.0               # For vision models with PyTorch
+torchaudio~=2.7.0                 # For audio processing with PyTorch
+torchvision~=0.22.0               # For vision models with PyTorch
 
 # For YOLO object detection (Ultralytics is a common choice for recent YOLO versions)
 ultralytics~=8.0.190

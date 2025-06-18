@@ -23,7 +23,17 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-3. Install in development mode:
+3. If you want to use speaker diarization (whisperx), make sure:
+- CUDA is installed
+- Torch is installed properly per the command generated on https://pytorch.org/
+- You have an API key for Hugging Face
+- Set up Hugging Face access:
+   - Get your token from https://huggingface.co/settings/tokens
+   - Create a `.env` file in the project root
+   - Add your token: `HUGGING_FACE_TOKEN=your_token_here`
+   - Ensure `.env` is in your `.gitignore`
+
+4. Install in development mode:
 ```bash
 pip install -e .
 ```

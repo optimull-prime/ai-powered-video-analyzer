@@ -25,3 +25,6 @@ launch.json
 
 # Model Data
 yolo*.pt
+
+# Secrets
+*.env
