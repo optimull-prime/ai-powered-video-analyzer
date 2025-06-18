@@ -8,8 +8,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # relative to the project or absolute paths.
 # Example: os.path.join(BASE_DIR, "models", "yolov8n.pt")
 YOLO_MODEL_PATH = os.getenv("YOLO_MODEL_PATH", "yolov8n.pt") # Default, or get from env
-BLIP_MODEL_PATH = os.getenv("BLIP_MODEL_PATH", "path/to/your/blip/model")
-WHISPER_MODEL_PATH = os.getenv("WHISPER_MODEL_TYPE", "medium") # e.g., "base", "small", "medium"
+BLIP_MODEL_PATH = os.getenv("BLIP_MODEL_PATH", "path/to/your/blip/model") # Where is the blip model?
+WHISPER_MODEL_PATH = os.getenv("WHISPER_MODEL_TYPE", "medium.en") # e.g., "base", "small", "medium"
 PANNS_MODEL_PATH = os.getenv("PANNS_MODEL_PATH", os.path.join(BASE_DIR, "models", "cnn14.pth"))
 
 # --- Ollama Settings ---
